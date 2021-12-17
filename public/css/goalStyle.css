@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: #212121;
+	background-color: white;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -14,8 +14,6 @@ body {
 	color: var(--black-color);
 }
 
-
-  
 
 /* Typography */
 h1{
@@ -205,7 +203,7 @@ a.article, a.article:hover {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 15%;
-	padding-left: 15%;
+	padding-left: 25%;
 
     min-height: 100vh;
 	background-color: var(--black-color);
@@ -438,11 +436,60 @@ a.article, a.article:hover {
 	border-bottom: 1px solid white;
   }
   
-  .modal-header .title {
-	font-size: 1.25rem;
-	font-weight: bold;
-  }
+	#goalsTooltip {
+		visibility: hidden;
+		position:fixed;
+		border-radius: 10px;
+		padding-top:12px;
+		text-align: center;
+		opacity: .8;
+		margin-left:100px;
+		top: 148px;
+
+		z-index: 5;
+		color:white;
+		width: 200px;
+		height:40px;
+		font-size:16px;
+		background-color: rgb(17, 17, 17);
+	}
   
+  .Goals{
+	  position: relative;
+	  display: inline-block;
+
+	font-family: "Arial", Helvetica, sans-serif;
+
+	/* color:var(--black-color); */
+	color: #f1f1f1;
+	font-size: 35px;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	margin:10px;
+	margin-left:50px;
+	border-radius: 25px;
+  }
+
+	.tooltiptext{
+
+	position: relative;
+	display: inline-block;
+	font-family: "Arial", Helvetica, sans-serif;
+	/* color:var(--black-color); */
+	color: #f1f1f1;
+	font-size: 35px;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	margin:10px;
+	margin-left:50px;
+	border-radius: 25px;
+	}
+
+
+
+
   .modal .close-button {
 	padding-left: 15px;
 	color:White;
@@ -458,3 +505,48 @@ a.article, a.article:hover {
 	color: white;
 	padding: 10px 15px;
   }
+
+.trash {
+	padding-left:20px;
+	margin-bottom:15px;
+	width: 50px;
+	height: auto;
+
+}
+
+  .RoundedBox {
+	border-width: 1px;
+	border-color: white;
+    outline: 2;
+    overflow: hidden;
+    height: 30px;
+	width:200px;
+	margin:3px;
+	background-color: var(--black-color);
+	color: white;
+    padding-left: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.button {
+	margin-left: 155px;
+	border-width: 1px;
+	border-color: var(--dark-color);
+	background-color:var(--primary-color);
+	/* border-color: --primary-color;
+		/* border-color: rgb(37, 18, 85); */
+	/* background-color:var(--dark-color); */ 
+
+	font-weight:normal;
+	margin-top: 5px;
+	width: 100px;
+	height:60px;
+	color: white;
+
+	/* padding: 5px; */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
